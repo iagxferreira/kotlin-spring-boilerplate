@@ -18,8 +18,13 @@ repositories {
 	mavenCentral()
 }
 
+var springdocVersion = "2.3.0"
+
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
+	implementation("org.springframework.boot:spring-boot-starter-validation")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:${springdocVersion}")
+	implementation("org.springdoc:springdoc-openapi-starter-common:${springdocVersion}")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.flywaydb:flyway-core")
