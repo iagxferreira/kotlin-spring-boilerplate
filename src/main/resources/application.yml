@@ -1,3 +1,7 @@
 spring:
     application:
         name: boilerplate
+    datasource:
+        url: jdbc:postgresql://localhost:5432/development
+        username: root
+        password: secret
